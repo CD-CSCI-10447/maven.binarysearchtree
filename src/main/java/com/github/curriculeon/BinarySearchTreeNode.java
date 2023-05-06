@@ -4,6 +4,8 @@ public class BinarySearchTreeNode<Key extends Comparable<Key>, Value> {
 
     private Key key;
     private Value value;
+    private BinarySearchTreeNode left;
+    private BinarySearchTreeNode right;
 
     public BinarySearchTreeNode(Key key, Value value) {
         this.key = key;
@@ -28,19 +30,19 @@ public class BinarySearchTreeNode<Key extends Comparable<Key>, Value> {
     }
 
     public BinarySearchTreeNode<Key, Value> getLeft() {
-        return null; // TODO
+        return left;
     }
 
     public void setLeft(BinarySearchTreeNode<Key, Value> left) {
-        // TODO
+        this.left = left;
     }
 
     public BinarySearchTreeNode<Key, Value> getRight() {
-        return null; // TODO
+        return right;
     }
 
     public void setRight(BinarySearchTreeNode<Key, Value> right) {
-        // TODO
+        this.right = right;
     }
 
     @Override
